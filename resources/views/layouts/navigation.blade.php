@@ -18,12 +18,6 @@
                 </div>
 
                 <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
-                    <x-nav-link :href="route('aves')" :active="request()->routeIs('aves')">
-                        {{ __('Aves') }}
-                    </x-nav-link>
-                </div>
-
-                <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
                     <x-nav-link :href="route('ordenes')" :active="request()->routeIs('ordenes')">
                         {{ __('Ordenes') }}
                     </x-nav-link>
@@ -34,6 +28,20 @@
                         {{ __('Familias') }}
                     </x-nav-link>
                 </div>
+
+                <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
+                    <x-nav-link :href="route('aves')" :active="request()->routeIs('aves')">
+                        {{ __('Aves') }}
+                    </x-nav-link>
+                </div>
+
+                <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
+                    <x-nav-link :href="route('habitas')" :active="request()->routeIs('habitas')">
+                        {{ __('Habitas') }}
+                    </x-nav-link>
+                </div>
+
+
             </div>
 
             <!-- Settings Dropdown -->

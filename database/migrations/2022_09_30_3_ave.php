@@ -16,6 +16,7 @@ return new class extends Migration
         Schema::create('aves', function (Blueprint $table) {
             $table->id();
             $table->string('nombre');
+            $table->integer('mide');
             $table->foreignId('familia_id')->references('id')->on('familias')->onDelete('cascade');
             $table->timestamps();
         });

@@ -25,7 +25,7 @@
                 <div class="modal-content">
 
                     <div class="modal-body">
-                        <h2 class="my-4">Crear Orden</h2>
+                        <h2 class="my-4">Crear habita</h2>
                         <input class="form-control form-control-lg" type="text" wire:model="nombre">
                         @error('nombre')
                             <span class="my-3 text-danger">{{ $message }}</span>
@@ -47,11 +47,11 @@
     <div class="row mt-5">
         <div class="col-6">
             <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-                <i class="fa-solid fa-user"></i> {{ __('Orden') }}
+                <i class="fa-solid fa-user"></i> {{ __('Hábitats') }}
             </h2>
         </div>
         <div class="col-6 text-end">
-            <button type="button" wire:click="createModal()" class="btn btn-success">Añadir Orden</button>
+            <button type="button" wire:click="createModal()" class="btn btn-success">Añadir Hábitats</button>
         </div>
     </div>
 
@@ -71,13 +71,13 @@
                     </tr>
                 </thead>
                 <tbody>
-                    @foreach ($ordenes as $orden)
+                    @foreach ($habitas as $habita)
                         <tr>
-                            <td>{{ $orden->id }}</td>
-                            <td>{{ $orden->nombre }}</td>
+                            <td>{{ $habita->id }}</td>
+                            <td>{{ $habita->nombre }}</td>
                             <td class="text-center">
-                                {{-- <button type="button" wire:click="update({{$orden->id}})" class="btn btn-secondary">Editar</button> --}}
-                                <button type="button" wire:click="delete({{ $orden->id }})"
+                                {{-- <button type="button" wire:click="update({{$habita->id}})" class="btn btn-secondary">Editar</button> --}}
+                                <button type="button" wire:click="delete({{ $habita->id }})"
                                     class="btn btn-danger">Eliminar</button>
                             </td>
                         </tr>
@@ -105,3 +105,4 @@
         })
     </script>
 </div>
+

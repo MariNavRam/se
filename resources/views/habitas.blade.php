@@ -1,5 +1,5 @@
 <x-app-layout>
     <div class="container">
-    <livewire:create-familia />
+    <livewire:create-habita />
     </div>
 </x-app-layout>

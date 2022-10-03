@@ -33,4 +33,8 @@ Route::get('/familias', function () {
     return view('familias');
 })->middleware(['auth', 'verified'])->name('familias');
 
+Route::get('/habitas', function () {
+    return view('habitas');
+})->middleware(['auth', 'verified'])->name('habitas');
+
 require __DIR__.'/auth.php';

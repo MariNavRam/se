@@ -7,11 +7,14 @@ use App\Models\Ordene;
 
 class CreateOrden extends Component
 {
-    public $ordenes, $orden; 
+    public $ordenes, $nombre, $orden; 
 
+    protected $rules = [
+        'nombre' => 'required|min:5',
+    ];
 
     public function mount(){
-        $this->ordenes = Ordene::get();
+        $this->ordenes = Ordene::all();
         $this->orden = new Ordene;
     }
 
@@ -20,12 +23,26 @@ class CreateOrden extends Component
         return view('livewire.create-orden');
     }
 
-    public function create(){
+    public function createModal(){
+        $this->nombre = null;
         $this->dispatchBrowserEvent('openModal');
     }
 
-    public function delete($id){
+    public function create(){
+        $this->validate();
         
+        Ordene::create([
+            'nombre' => $this->nombre,
+        ]);
+        $this->dispatchBrowserEvent('notification');
+        $this->dispatchBrowserEvent('closeModal');
+        $this->mount();
+    }
+
+    public function delete($id){
+        $this->orden->find($id)->delete();
+        $this->dispatchBrowserEvent('notification');
+        $this->mount();
     }
 
     public function update($id){
