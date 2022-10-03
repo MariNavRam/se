@@ -1,0 +1,346 @@
+Base del Conocimiento
+Hábitat (´Habitat1´, ‘Acuática’)
+Hábitat (´Habitat2´, ‘Boscosa’)
+Hábitat (´Habitat3´, ‘Granjas y Sembrados’)
+Hábitat (´Habitat4´, ‘Bosques templados’)
+Hábitat (´Habitat5´, ‘Matorrales’)
+Hábitat (´Habitat6´, ‘Bosques Aridos AND semihumedos’)
+Hábitat (´Habitat7´, ‘Matorrales densos’)
+Hábitat (´Habitat8´, ‘Áreas pino AND Eucalipto)
+Hábitat (´Habitat9´, ‘Matorrales AND Pastizales)
+Hábitat (´Habitat10´, ‘Matorrales Arbolados’)
+Hábitat (´Habitat11´, ‘Bosques AND Matorrales’)2
+Hábitat (´Habitat12´, ‘Bosques Arbolados’)
+Hábitat (´Habitat13´, ‘Zonas Áridas’)
+Hábitat (´Habitat14´, ‘Bosques Semiaridos’)
+Hábitat (´Habitat15´, ‘Bosques Encino-pino’)
+Hábitat (´Habitat16´, ‘Bosques de Niebla’)
+Hábitat (´Habitat17´, ‘Bosques AND Pastizales’)
+Hábitat (´Habitat18´, ‘Áreas abiertas Áridas AND Semiáridas’)
+Hábitat (´Habitat19´, ‘Áreas abiertas AND semiabiertas’)
+Hábitat (´Habitat20´, ‘Arbolados Dispersos’)2
+Hábitat (´Habitat21´, ‘Zona Abiertas con vegetación dispersa’)
+Hábitat (´Habitat22´, ‘Zonas Arboladas’)
+Hábitat (´Habitat23´, ‘’Bosque abiertos y semiabiertos)
+Hábitat (´Habitat24´, ‘Bosques’)vermimora celata
+Hábitat (´Habitat25´, ‘Bosques abiertos con sotobosques densos’)
+Hábitat (´Habitat26´, ‘Bosques abiertos con sotobosques pino-encino’)
+Hábitat (´Habitat27´, ‘Bosques de abeto’)
+----------------------------------------------------------------
+--Tamaño (Mide)
+Tamaño1 (´Pequeño´, 7cm-20cm)
+Tamaño2 (‘Mediano’, 21cm-40m)
+Tamaño3 (‘Grande’, 41cm-75cm)
+-----------------------------------------------------------------
+Características
+Tiene (‘C1,’torso blanco’)
+Tiene (‘C2,’pico negro’)
+Tiene (‘C3,’’cabeza roja)
+Tiene (‘C4,’loras amarillentas’)
+Tiene (‘C5,’Cuerpo café-oscuro’)
+Tiene (‘C6,’corona azul-gris’)
+Tiene (‘C7,’ojos rojos’)
+Tiene (‘C8,’plumaje café-amarrillo’)
+Tiene (‘C9,’anillo orbital amarillo’)
+Tiene (‘C10,’pico amarillo’)
+Tiene (‘C11,’pico ancho’)
+Tiene (‘C12,’cuerpo negro’)
+Tiene (‘C13,’vientre amarrillo-naranja’)
+Tiene (‘C14,’garganta blanca’)
+Tiene (‘C15,’vientre blanquecino’)
+Tiene (‘C16,’pico rojo con punta negra’)
+Tiene (‘C17,’corona roja’)
+Tiene (‘C18,’cola verde’)
+Tiene (‘C19,’cola cuadrada’)
+Tiene (‘C20,’motas verdes’)
+Tiene (‘C21,’garganta roja’)
+Tiene (‘C22,’mascara negra’)
+Tiene (‘C23,’franjas pectorales’)
+Tiene (‘C24,’vientre blanco-amarrillento’)
+Tiene (‘C25,’cabeza café rojiza’)
+Tiene (‘C26,’vientre rojo’)
+Tiene (‘C27,’cola cuadrada negra’)
+Tiene (‘C28,’antifaz negro’)
+Tiene (‘C29,’alas negras con dos barras laterales blancas’)
+Tiene (‘C30,’Espalda verde olivo’)
+Tiene (‘C31,’Pecho gris plomizo’)
+Tiene (‘C32,’garganta y pecho blanco’)
+Tiene (‘C33,’pico largo’)
+Tiene (‘C34,’Pecho y garganta gris’)
+Tiene (‘C35,’alas café-gris’)
+Tiene (‘C36,’anillo ocular amarillo’)
+Tiene (‘C37,’garganta amarilla’)
+Tiene (‘C38,’cola amarilla’)
+Tiene (‘C39,’corona naranja’)
+Tiene (‘C40,’pecho amarillo’)
+Tiene (‘C41,’corona gris’)
+Tiene (‘C42,’rabadilla amarilla’)
+Tiene (‘C43,’franja pectoral negra y línea malar oscura’) Hembra
+Tiene (‘C44,’garganta negra’)
+Tiene (‘C45,’arco ocular inferior amarillo’)
+Tiene (‘C46,’alas grises con dos con dos barras alares blancas’)
+Tiene (‘C47,’cabeza amarrilla con nuca negra’)
+Tiene (‘C48,’auriculares grises’)
+Tiene (‘C49,’patas amarillas’)
+Tiene (‘C50,’flancos anaranjados’)
+Tiene (‘C51,’garganta roja’)
+Tiene (‘C52,’pico rosáceo oscuro’)
+Tiene(‘C53’,’cara blanca forma de corazón’’)
+--------------------------------------------------------------------------------------
+ 
+Reglas
+--------------------------Reglas por Hábitat----------------------------
+ReglaHab1(‘Egretta_Thula’, ‘Acuática’).
+ReglaHab2(‘Bubulcus_ibis’, ‘Lagos-pantanos’).
+ReglaHab3(‘Cathartes_aura’, ‘Boscosas’).
+ReglaHab4(‘Falco_sparverius’, ‘Praderas’).
+ReglaHab5(‘Accipiter_striatus’, ‘Bosques_templados’).
+ReglaHab6(‘Columba_linca’, ‘Matorrales’).
+ReglaHab7(‘Aratinga_caninularis’, ‘Bosques_aridos_semihumedos’).
+ReglaHab8(‘Crotophaga_sulcirostris’, ‘Matorrales_densos’).
+ReglaHab9(‘Tyto_alba’, ‘’Areas_abiertas).
+ReglaHab10(‘Chordeiles_minor’, ‘Bosques_pino’).
+ReglaHab11(‘Cynathus_latirodtris’, ‘Matorrales_arbolados’).
+ReglaHab12(‘Amazilia_bryllina’, ‘Ecotonos_y_bosques_montañosos’).
+ReglaHab13(‘Momotus_mexicanus’, ‘Bosques_Matorrales’).
+ReglaHab14(‘Chloroceryle_amaricana’, ‘Bosques_y_arbolados’).
+ReglaHab15(‘Melanerpes_uropygialis’, ‘Zonas_aridas’).
+ReglaHab16(‘Melanerpes_aurifrons’, ‘Bosques_semiaridos’).
+ReglaHab17(‘Sphyrapicus_varius’, ‘Bosques_encino_pino’).
+ReglaHab18(‘Picoides_scalaris’, ‘Zonas_abiertas’).
+ReglaHab19(‘Mitrephanes_phaeocercus’, ‘Bosques_niebla’).
+ReglaHab20(‘Contopus_pertinax’, ‘Bosques_pino’).
+ReglaHab21(‘Empodonax_minimus’, ‘Bosques_Pastizales’).
+ReglaHab22(‘Sayornis_saya’, ‘Areas_abiertas_aridas’).
+ReglaHab23(‘Pyrocephalus_rubinus’, ‘Áreas_abiertas’).
+ReglaHab24(‘Pitangus_sulphuratus’, ‘Arbolados_dispersos’).
+ReglaHab25(‘Myozetetes_similis’, ‘Arbolados_dispersos’).
+ReglaHab26(‘Tyrannus_crassirostris’, ‘Matorrales’).
+ReglaC27(‘Tyrannus_vociferans’, ‘Zonas_abiertas_vegetacion)
+ReglaHab28(‘Tyrannus_verticalis’, ‘Bosques_abiertos’).
+ReglaHab29(‘Vermivora_celata’, ‘Bosques_abiertos’).
+ReglaHab30(‘Vermivora_ruficapilla’, ‘Bosques_abiertos’).
+ReglaHab31(‘Dendroica_coronata’, ‘Bosques_encino_pino’).
+ReglaHab32(‘Dendroica_nigrescens’, ‘Bosques_abiertos’).
+ReglaHab33(‘Dendroica_occidentalis’, ‘Bosques_de_abeto’).
+ReglaHab34(‘Mniotilta_varia’, ‘Bosques_de_pin’).
+ReglaHab35(‘Setophaga_ruticilla’, ‘Bosques_de_encino’).
+ReglaHab36(‘Piranga_flava’, ‘Bosques_templados’).
+ReglaHab37(‘Piranga_ludoviciana’, ‘Bosques_templados’).
+---------------------------------Reglas por Tamaño-Rango-------------------------------
+
+ReglaRangoTam1(‘5cm-20cm’,’Pequeño’)
+ReglaRangoTam2(‘21cm-40cm’,’Mediano’)
+ReglaRangoTam3(‘41cm-75cm,’ ‘Grande’)
+-----------------------------------Reglas por Tamaño----------------------------------------
+ReglaTam1(Eggreta_Thula'', '59cm',) regla  (ReglaRangoTam3(‘Grande’)).
+ReglaTam2(‘Bubulcus_ibis’, ‘50cm’) (ReglaRangoTam3(‘Grande’)).
+ReglaTam3(‘Cathartes_aura’, ‘70cm’) (ReglaRangoTam3(‘Grande’)).
+ReglaTam4(‘Falco_sparverius’, ‘ 25cm’) regla  (ReglaRangoTam2(‘Mediano’)).
+ReglaTam5(‘Accipiter_striatus’, ‘30cm’) regla  (ReglaRangoTam2(‘Mediano’)).
+ReglaTam6(‘Columba_linca’, ‘ 21cm’) regla  (ReglaRangoTam2(‘Mediano’)).
+ReglaTam7(‘Aratinga_caninularis’,‘24cm’) regla  (ReglaRangoTam2(‘Mediano’)).
+ReglaTam8(‘Crotophaga_sulcirostris’, ‘33cm’) regla  (ReglaRangoTam2(‘Mediano’)).
+ReglaTam9(‘Tyto_alba’, ‘40cm’) regla  (ReglaRangoTam2(‘Mediano’)).
+ReglaTam10(‘Chordeiles_minor’, ‘24cm’) regla  (ReglaRangoTam2(‘Mediano’)).
+ReglaTam11(‘Cynathus_latirodtris’, ‘10cm’) regla  (ReglaRangoTam1(‘Pequeño’)).
+ReglaTam12(‘Amazilia_bryllina’,‘ 10cm’) regla  (ReglaRangoTam1(‘Pequeño’)).
+ReglaTam13(‘Momotus_mexicanus’, ‘32cm’) regla  (ReglaRangoTam2(‘Mediano’)).
+ReglaTam14(‘Chloroceryle_amaricana’, ‘19cm’) regla  (ReglaRangoTam1(‘Pequeño’)).
+ReglaTam15(‘Melanerpes_uropygialis’, ‘23cm’) regla  (ReglaRangoTam2(‘Mediano’)).
+ReglaTam16(‘Melanerpes_aurifrons’, ‘24cm’) regla  (ReglaRangoTam2(‘Mediano’)).
+ReglaTam17(‘Sphyrapicus_varius’, ‘21cm’’) regla  (ReglaRangoTam2(‘Mediano’)).
+ReglaTam18(‘Picoides_scalaris’, ‘18cm’) regla  (ReglaRangoTam1(‘Pequeño’)).
+ReglaTam19(‘Mitrephanes_phaeocercus’, ‘Pequeño’, si mide 1c3m)).
+ReglaTam20(‘Contopus_pertinax’, ‘19cm’) regla  (ReglaRangoTam1(‘Pequeño’)).
+ReglaTam21(‘Empidonax_minimus’, ‘13cm’) regla  (ReglaRangoTam1(‘Pequeño’)).
+ReglaTam21(‘Empidonax_hammondii’, ‘14cm’) regla  (ReglaRangoTam1(‘Pequeño’)).
+ReglaTam22(‘Sayornis_saya’, ‘19cm’) regla  (ReglaRangoTam1(‘Pequeño’)).
+ReglaTam23(‘Pyrocephalus_rubinus’,  ‘19cm’) regla  (ReglaRangoTam1(‘Pequeño’)).
+ReglaTam24(‘Pitangus_sulphuratus’,  ‘14cm’) regla  (ReglaRangoTam1(‘Pequeño’)).
+ReglaTam25(‘Myozetetes_similis’, ‘18cm’) regla  (ReglaRangoTam2(‘Pequeño’)).
+ReglaTam26(‘Tyrannus_crassirostris’, ‘ 23cm’) regla  (ReglaRangoTam2(‘Mediano’)).
+ReglaTam27(‘Tyrannus_vociferans’, ‘ 22cm’) regla  (ReglaRangoTam2(‘Mediano’)).
+ReglaTam28(‘Tyrannus_verticalis’, ‘21cm’’) regla  (ReglaRangoTam2(‘Mediano’)).
+ReglaTam29(‘Vermivora_celata’, ‘ 12cm’) regla  (ReglaRangoTam1(‘Pequeño’)).
+ReglaTam30(‘Vermivora_ruficapilla’,‘12cm’) regla  (ReglaRangoTam1(‘Pequeño’)).
+ReglaTam31(‘Dendroica_coronata’, ‘14cm’) regla  (ReglaRangoTam1(‘Pequeño’)).
+ReglaTam32(‘Dendroica_nigrescens’,  ‘12cm’) regla  (ReglaRangoTam1(‘Pequeño’)).
+ReglaTam33(‘Dendroica_occidentalis’, ‘ 12cm’) regla  (ReglaRangoTam1(‘Pequeño’)).
+
+ReglaTam34(‘Mniotilta_varia’, ´12cm’)regla  (ReglaRangoTam1(‘Pequeño’)).
+ReglaTam35(‘Setophaga_ruticilla’, ‘13cm’), regla  (ReglaRangoTam1(‘Pequeño’)).
+ReglaTam36(‘Piranga_flava’, ‘20cm’), regla  (ReglaRangoTam1(‘Pequeño’)).
+ReglaTam37(‘Piranga_ludoviciana’),  regla  (ReglaRangoTam1(‘Pequeño’)).
+
+----------------------------------Regla Características---------------------------
+ReglaC1(‘Egretta_Thula’, ‘cuerpo_blanco’).
+ReglaC1.1(‘Egretta_Thula’, ’pico_negro’)
+ReglaC1.2(‘Egretta_Thula’), ‘ojos_amarilos’).
+ReglaC2‘Bubulcus_ibis’, ‘cuerpo_blanco’)
+ReglaC2.1‘Bubulcus_ibis’, ’patas_negras’).
+ReglaC3(‘Cathartes_aura’, ‘cabeza_roja’)
+ReglaC3.1(‘Cathartes_aura’, ‘cuerpo_cafe_oscuro).
+ReglaC4(‘Falco_sparverius’, ‘corona_gris’,
+ReglaC4.1(‘Falco_sparverius’, ‘garganta_blanca’,
+ReglaC4.2(‘Falco_sparverius’, ‘pecho_anaranjado_deslabado’)
+ReglaC5(‘Accipiter_striatus’, ‘ojos_rojos’)
+ReglaC5.1(‘Accipiter_striatus’, ´pecho_blanco’,)
+ReglaC5.2(‘Accipiter_striatus’, ‘cuerpo_gris’).
+ReglaC6(‘Columba_linca’, ‘anillo_ocular_blanquecino’)
+ReglaC6.1(‘Columba_linca, ‘pico _amarillo’)
+ReglaC6.2(‘Columba_linca, ’ojos_rojos’).
+ReglaC7(‘Aratinga_caninularis’, ‘anillo_orbital_amarrillo’)
+ReglaC7.1(‘Aratinga_caninularis’, ‘espalda_verde’)
+ReglaC8(‘Crotophaga_sulcirostris’, ‘cuerpo_negro’)
+ReglaC8.1(‘Crotophaga_sulcirostris’,´cola_larga´) 
+ReglaC8.2(‘Crotophaga_sulcirostris’, ´pico_ancho´).
+ReglaC9(‘Tyto_alba’, ‘cara_corazon_blanca’)
+ReglaC9.1(‘Tyto_alba’, ´vientre_blanco´)
+ReglaC9.2(‘Tyto_alba’, ‘pecho_blanco’)
+ReglaC10(‘Chordeiles_minor’, ‘vientre_amarrillo-naranja’)
+ReglaC10.1(‘Chordeiles_minor’, ‘garganta blanca’) 
+ReglaC11(‘Cynathus_latirodtris’, ‘pico_rojo’) 
+ReglaC11.1(‘Cynathus_latirodtris’, ‘gorja_azul’) 
+ReglaC11.2(‘Cynathus_latirodtris’, ‘cabeza_verde’)
+ReglaC12(‘Amazilia_bryllina’, ‘cola_cuadrada’).
+ReglaC12.1(‘Amazilia_bryllina’, ‘vientre_blanquecino).
+ReglaC13(‘Momotus_mexicanus’, ‘corona_rojiza’)
+ReglaC13.1(‘Momotus_mexicanus’, ‘mascara_negra’)
+ReglaC13.2(‘Momotus_mexicanus’, ‘cola_verde)’
+ReglaC14(‘Chloroceryle_amaricana’, ‘dos_franjas_pectorales’)
+ReglaC14.1(‘Chloroceryle_amaricana’ ‘motas_verdes’).
+ReglaC15(‘Melanerpes_uropygialis’, ‘corona_roja’)
+ReglaC15.1(‘Melanerpes_uropygialis’, (‘cola_negra_restrices)
+ReglaC16(‘Melanerpes_aurifrons’, ‘nuca_amarilla’) 
+ReglaC16.1(‘Melanerpes_aurifrons’(espalda_barrada_negro_blanco)
+ReglaC16.2(‘Melanerpes_aurifrons’, ‘garganta_roja’)
+ReglaC17(‘Sphyrapicus_varius’, ‘cola_blnaca’).
+ReglaC17.1(‘Sphyrapicus_varius’, ‘garganta_roja_negro’).
+ReglaC18(‘Picoides_scalaris’, ‘zona malar_negra’) 
+ReglaC18.1(‘Picoides_scalaris’,‘pico_gris)
+ReglaC19(‘Mitrephanes_phaeocercus’, ‘mandibula_rosacea’)
+ReglaC19.1(‘Mitrephanes_phaeocercus’, ‘cabeza_rojiza_con_copete)
+ReglaC20(‘Contopus_pertinax’, ‘maxila_negra)
+ReglaC20.1(‘Contopus_pertinax’, ‘vientre_amarilo’)
+ReglaC21(‘Empodonax_minimus’, ‘loras_blancas’)
+ReglaC21.1(‘Empodonax_minimus’,  (‘mandibula_amarilla’)
+ReglaC22(‘Sayornis_saya’, ‘vientre_rojizo’)
+ReglaC22.1(‘Sayornis_saya’, ‘alas_gris_dos_barras_alares’)
+ReglaC23(‘Pyrocephalus_rubinus’, ‘antifaz_negros’)
+ReglaC23.1(‘Pyrocephalus_rubinus’,‘pecho_rojo’)
+ReglaC23.2(‘Pyrocephalus_rubinus’,‘cola_cuarada_negra’).
+ReglaC24(‘Pitangus_sulphuratus’, ‘alas_rojizas’).
+ReglaC24.1(‘Pitangus_sulphuratus’,‘cola_rojiza) 
+ReglaC24.2(‘Pitangus_sulphuratus’, ‘garganta_blanca)’
+ReglaC25(‘Myozetetes_similis’, ‘antifaz_negro)
+ReglaC25.1(‘Myozetetes_similis’,‘plumas_alares_rojizas’)
+ReglaC26(‘Tyrannus_crassirostris’, ‘pecho_blanco‘)
+ReglaC26.1(‘Tyrannus_crassirostris’, ‘cabeza_gris‘)
+ReglaC27(‘Tyrannus_vociferans’, ‘espalda_verde_olivo’)
+ReglaC27.1(‘Tyrannus_vociferans’,‘cabeza_gris_plomizo’).
+ReglaC28(‘Tyrannus_verticales’, ‘garganta_grises’)
+ReglaC28.1(‘Tyrannus_verticales’ , ‘espalda_gris_verdoso’).
+ReglaC29(‘Vermivora_celata’, ‘vientre_amarillo’)
+ReglaC29.1(‘Vermivora_celata’, ‘garganta_amarilla’)
+ReglaC30(‘Vermivora_ruficapilla’, ‘corona_anaranjada)
+ReglaC30.1(‘Vermivora_ruficapilla’, ´pecho_amarillo’) 
+ReglaHab31(‘Dendroica_coronata’, ‘cara_negra’)
+ReglaHab31.1(‘Dendroica_coronata’,cola_gris)
+ReglaHab31.2(‘Dendroica_coronata’, corona_amarilla).
+ReglaHab32(‘Dendroica_nigrescens’, ‘garganta_negra’)
+ReglaHab32.1(‘Dendroica_nigrescens’, ‘franja_pectoral_negra’)
+ReglaHab32.2(‘Dendroica_nigrescens’,’ line_malar_oscura‘)
+ReglaC33(‘Dendroica_occidentalis’, ‘corona_negra’) 
+ReglaC33.1(‘Dendroica_occidentalis’, ‘garganta_negra’) 
+ReglaC33.2(‘Dendroica_occidentalis’, ’pecho_amarillo’)
+ReglaHab34(‘Mniotilta_varia’, ‘tarso_negro’)
+ReglaHab34.1(‘Mniotilta_varia’,‘patas_amarrillas’)
+ReglaHab35(‘Setophaga_ruticilla’, ‘cola_negra’)
+ReglaHab35.1(‘Setophaga_ruticilla’,(‘loras_oscuras’)
+ReglaHab36(‘Piranga_flava’, ‘garganta_roja’)
+ReglaHab36.1(‘Piranga_flava’,‘pecho_rojo’)
+ReglaHab36.2(‘Piranga_flava’,‘flancos_grises’).
+ReglaHab37(‘Piranga_ludoviciana’, ‘barbillas_rojas’).
+ReglaHab37.1(‘Piranga_ludoviciana’, ‘alas negras’).
+Módulo de Explicación
+
+Explica si:-
+el usuario eligió regla(reglaHab1, regla(ReglaTam1), regla(‘ReglaC1) regla(ReglaC1.1) regla(,ReglaC1.2).
+Entonces el ave es un Eggreta Thula
+
+el usuario eligió regla(reglaHab2, regla(ReglaTam2), regla(‘ReglaC1) regla(ReglaC1.1) regla (ReglaC1.2).
+Entonces el ave es un Bubulcus_ibis
+
+el usuario eligió regla(reglaHab3, regla(ReglaTam3), regla(‘ReglaC3), regla(ReglaC3.1).
+Entonces el ave es un Cathartes_aura
+
+el usuario eligió regla(reglaHab4, regla(ReglaTam4), regla(‘Regla41), regla (ReglaC4.1), regla (ReglaC4.2).
+Entonces el ave es un Falco_sparverius
+
+el usuario eligió regla(reglaHab5, regla(ReglaTam5), regla(‘ReglaC5), regla (ReglaC5.1), regla(ReglaC5.2).
+Entonces el ave es un Accipiter_striatus
+el usuario eligió regla(reglaHab6, regla(ReglaTam6), regla(‘ReglaC6), regla (ReglaC6.1), regla ( ReglaC6.2).
+Entonces el ave es un Columba_linca’
+el usuario eligió regla(reglaHab7, regla(ReglaTam7), regla(‘ReglaC7), regla (ReglaC7.1).
+Entonces el ave es un Aratinga_caninularis
+el usuario eligió regla(reglaHab8, regla(ReglaTam8), regla(‘ReglaC8), regla (ReglaC8.1), regla(ReglaC8.2).
+Entonces el ave es un Crotophaga_sulcirostris
+usuario eligió regla(reglaHab9, regla(ReglaTam9), regla(‘ReglaC9), regla (ReglaC9.1), regla(ReglaC9.2).
+Entonces el ave es unTyto_alba
+ usuario eligió regla(reglaHab10, regla(ReglaTam10), regla(‘ReglaC10), regla (ReglaC10.1).
+Entonces el ave es un Chordeiles_minor
+usuario eligió regla(reglaHab11, regla(ReglaTam11), regla(‘ReglaC11), regla (ReglaC11.1), regla(ReglaC11.2).
+Entonces el ave es un Cynathus_latirodtris
+ Usuario eligió regla(reglaHab12, regla(ReglaTam12), regla(‘ReglaC12), regla (ReglaC12.1).
+Entonces el ave es un Amazilia_bryllina’
+ Usuario eligió regla(reglaHab13, regla(ReglaTam13), regla(‘ReglaC13), regla (ReglaC13.1), regla(ReglaC13.2).
+Entonces el ave es un Momotus_mexicanus
+Usuario eligió regla(reglaHab14, regla(ReglaTam14), regla(‘ReglaC14), regla (ReglaC14.1).
+Entonces el ave es un Chloroceryle_amaricana
+Usuario eligió regla(reglaHab15, regla(ReglaTam15), regla(‘ReglaC15), regla (ReglaC15.1).
+Entonces el ave es un Melanerpes_uropygialis
+Usuario eligió regla(reglaHab16, regla(ReglaTam16), regla(‘ReglaC16), regla (ReglaC16.1), regla(ReglaC16.2).
+Entonces el ave es un Melanerpes_aurifrons
+Usuario eligió regla(reglaHab17, regla(ReglaTam17), regla(‘ReglaC17), regla (ReglaC17.1)
+Entonces el ave es un Sphyrapicus_varius
+Usuario eligió regla(reglaHab18, regla(ReglaTam18), regla(‘ReglaC18), regla (ReglaC18.1).
+Entonces el ave es un Picoides_scalaris
+Usuario eligió regla(reglaHab19, regla(ReglaTam19), regla(‘ReglaC19), regla (ReglaC19.1).
+Entonces el ave es un Mitrephanes_phaeocercus
+Usuario eligió regla(reglaHab20, regla(ReglaTam20), regla(‘ReglaC20), regla (ReglaC20.1).
+Entonces el ave es un Contopus_pertinax
+Usuario eligió regla(reglaHab21, regla(ReglaTam21), regla(‘ReglaC21), regla (ReglaC21.1).
+Entonces el ave es un Empodonax_minimus
+Usuario eligió regla(reglaHab22, regla(ReglaTam22), regla(‘ReglaC22), regla (ReglaC221).
+Entonces el ave es un Sayornis_saya
+Usuario eligió regla(reglaHab23, regla(ReglaTam23), regla(‘ReglaC23), regla (ReglaC23.1), regla(ReglaC23.2).
+Entonces el ave es un Pyrocephalus_rubinus
+Usuario eligió regla(reglaHab24, regla(ReglaTam24), regla(‘ReglaC24), regla (ReglaC24.1), regla(ReglaC24.2).
+Entonces el ave es un Pitangus_sulphuratus
+Usuario eligió regla(reglaHab25, regla(ReglaTam25), regla(‘ReglaC25), regla (ReglaC25.1).
+Entonces el ave es un Myozetetes_similis
+Usuario eligió regla(reglaHab26, regla(ReglaTam26), regla(‘ReglaC26), regla (ReglaC26.1).
+Entonces el ave es un Tyrannus_crassirostris
+Usuario eligió regla(reglaHab27, regla(ReglaTam27), regla(‘ReglaC27), regla (ReglaC27.1)
+Entonces el ave es un Tyrannus_vociferans
+Usuario eligió regla(reglaHab28, regla(ReglaTam28), regla(‘ReglaC28), regla (ReglaC28.1).
+Entonces el ave es un Tyrannus_verticales
+Usuario eligió regla(reglaHab29, regla(ReglaTam29), regla(‘ReglaC29), regla (ReglaC29.1).
+Entonces el ave es un Vermivora_celata
+Usuario eligió regla(reglaHab30, regla(ReglaTam30), regla(‘ReglaC30), regla (ReglaC30.1)
+Entonces el ave es un Vermivora_ruficapilla
+Usuario eligió regla(reglaHab31, regla(ReglaTam31), regla(‘ReglaC31), regla (ReglaC31.1), regla(ReglaC31.2).
+Entonces el ave es un Dendroica_coronata
+Usuario eligió regla(reglaHab32, regla(ReglaTam32), regla(‘ReglaC32), regla (ReglaC32.1), regla(ReglaC32.2).
+Entonces el ave es un Dendroica_nigrescens
+Usuario eligió regla(reglaHab33, regla(ReglaTam33), regla(‘ReglaC33), regla (ReglaC33.1), regla(ReglaC33.2).
+Entonces el ave es un Dendroica_occidentalis
+Usuario eligió regla(reglaHab34, regla(ReglaTam34), regla(‘ReglaC34), regla (ReglaC34.1).
+Entonces el ave es un Mniotilta_varia’
+Usuario eligió regla(reglaHab35, regla(ReglaTam35), regla(‘ReglaC35), regla (ReglaC35.1).
+Entonces el ave es un Setophaga_ruticilla’
+Usuario eligió regla(reglaHab36, regla(ReglaTam36), regla(‘ReglaC36), regla (ReglaC36.1), regla(ReglaC36.2).
+Entonces el ave es un Piranga_flava
+Usuario eligió regla(reglaHab37, regla(ReglaTam37), regla(‘ReglaC37), regla (ReglaC37.1).
+Entonces el ave es un Piranga_ludoviciana
