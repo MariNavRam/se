@@ -1,0 +1,62 @@
+.body{
+    background-color:#347a14fd;
+}
+.body3{
+    background-color:#d7eeccfd;
+}
+.body2{
+    background-color:rgb(177, 230, 142);
+}
+.fondo{
+image-resolution: url("../assents/img/fon.jpeg");
+height: 390px;
+
+
+    background: url("../assents/img/fon.jpeg");
+    background-size: cover;
+    
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}
+.loginbody 
+{
+    background-image: url("../assents/img/fondo.jpeg");
+
+}
+.letra2{
+font-family: "Coperplate", fantasy;
+
+  }
+  .letra{
+    font-family: Lucida Handwriting, cursive, sans-serif;
+    color:rgb(55, 172, 55)
+  }
+  .letra3{
+    font-family: Lucida Handwriting, cursive, sans-serif;
+    color:rgb(55, 172, 55)
+  }
+.btn1{
+    background-color: rgb(13, 114, 21);
+    color:white;
+    border: 10xp blue;
+
+}
+  .row-container-full{
+    max-width: inherit;
+    width:100%;
+  }
+  .fon-aves{
+    image-resolution: url("../assents/img/aves.jpeg");
+    height:280px;
+    width:auto;
+    
+    
+        background: url("../assents/img/aves.jpeg");
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    .btn-margen{
+        margin-left: 5px;
+        margin-right: 5px;
+    }

@@ -37,4 +37,8 @@ Route::get('/habitas', function () {
     return view('habitas');
 })->middleware(['auth', 'verified'])->name('habitas');
 
+Route::get('/img_ave', function () {
+    return view('img_ave');
+})->middleware(['auth', 'verified'])->name('img_ave');
+
 require __DIR__.'/auth.php';
