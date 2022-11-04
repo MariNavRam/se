@@ -23,7 +23,7 @@
                         <input type="radio" class="btn-check" name="btnradio" {{ $flag[0] == true ? 'disabled' : '' }}
                             {{ $size == 1 ? 'checked' : '' }} wire:click="ruleOne({{ '1' }})" id="btnradio1"
                             autocomplete="off">
-                        <label class="btn btn-outline-primary for="btnradio1">Pequeña</label>
+                        <label class="btn btn-outline-primary" for="btnradio1">Pequeña</label>
 
                         <input type="radio" class="btn-check" name="btnradio" {{ $flag[0] == true ? 'disabled' : '' }}
                             {{ $size == 2 ? 'checked' : '' }} wire:click="ruleOne({{ '2' }})" id="btnradio2"
@@ -99,6 +99,6 @@
     </div>
 
 </div>
-</div>
+
 
    
