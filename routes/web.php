@@ -37,6 +37,10 @@ Route::get('/habitas', function () {
     return view('habitas');
 })->middleware(['auth', 'verified'])->name('habitas');
 
+Route::get('/nueva_ave', function () {
+    return view('nueva_ave');
+})->middleware(['auth', 'verified'])->name('nueva_ave');
+
 Route::get('/img_ave', function () {
     return view('img_ave');
 })->middleware(['auth', 'verified'])->name('img_ave');

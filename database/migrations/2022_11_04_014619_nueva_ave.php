@@ -16,7 +16,7 @@ return new class extends Migration
         Schema::create('aves_nuevas', function (Blueprint $table) {
             $table->id();
             $table->string('foto');
-            $table->boolean('size');
+            $table->enum('size', ['Pequeña', 'Mediana', 'Grande']);
             $table->timestamps();
         });
     }
