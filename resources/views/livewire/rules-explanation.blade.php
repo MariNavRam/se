@@ -16,14 +16,14 @@
             @if ($paso[0] == true)
         
                 <div class="col-sm-3" class="my-3">
-                    <h5 class="mb-2"><font color="white">¿De que tamaño es el ave? </h5></font>
+                    <h5 class="mb-2"><font color="white">¿De que tamaño es el ave? </font></h5>
  
                     <div class="btn-toolbar ">
                     <div  class="btn-space" role="group" aria-label="Basic radio toggle button group">
                         <input type="radio" class="btn-check" name="btnradio" {{ $flag[0] == true ? 'disabled' : '' }}
                             {{ $size == 1 ? 'checked' : '' }} wire:click="ruleOne({{ '1' }})" id="btnradio1"
                             autocomplete="off">
-                        <label class="btn btn-outline-primary for="btnradio1">Pequeña</label>
+                        <label class="btn btn-outline-primary" for="btnradio1">Pequeña</label>
 
                         <input type="radio" class="btn-check" name="btnradio" {{ $flag[0] == true ? 'disabled' : '' }}
                             {{ $size == 2 ? 'checked' : '' }} wire:click="ruleOne({{ '2' }})" id="btnradio2"
@@ -44,7 +44,7 @@
             
                 <div class="my-3">
                 
-                <h5 class="mb-2"><font color="white">¿En que hábitat lo vio? </h5></font>
+                <h5 class="mb-2"><font color="white">¿En que hábitat lo vio? </font></h5>
                     @foreach ($habitats as $habitat)
                     <button type="button" class="btn btn-secondary btn-space btn-margen {{ $habitaSelect == $habitat['id'] ? 'border-primary border border-3' : '' }}"
                      wire:click="ruleTwoSave({{$habitat['id']}})" {{ $flag[1] == true ? 'disabled' : '' }}>{{$habitat['nombre']}}</button>
@@ -56,7 +56,7 @@
             @if ($paso[2] == true)
             
                 <div class="my-3">
-                <h5 class="mb-2"><font color="white">Selecciona una opción que describa al ave...</h5></font>
+                <h5 class="mb-2"><font color="white">Selecciona una opción que describa al ave...</font></h5>
                     @foreach ($attributes as $attribute)
                     <button type="button" class="btn btn-warning {{ $attributeSelect == $attribute['id'] ? 'border-primary border border-3' : '' }}" wire:click="result({{$attribute['id']}})" {{ $flag[2] == true ? 'disabled' : '' }}>{{$attribute['nombre']}}</button>
                     @endforeach
@@ -99,6 +99,6 @@
     </div>
 
 </div>
-</div>
+
 
    
