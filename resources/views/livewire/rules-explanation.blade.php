@@ -107,14 +107,14 @@
                <h5>Sí su respuesta fue "NO", suba una imagen del ave </h5>
                <br><br>
 {{--SubirImgen--}}
-<form enctype="multipart/form.data" action="../views/nueva-ave" method="POST">
-
+<form enctype="multipart/form.data" action="nueva-ave" method="">
 
             
               <input type="file" name="file" />
               <input type="submit" name="upload"/>
                
 </form>
+</div>
                 @endif
               
          
