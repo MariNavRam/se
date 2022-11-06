@@ -16,8 +16,7 @@ class RulesExplanation extends Component
     public $pasoTwo, $pasoTree;
     public $popup, $visible;
 
-
-
+    public $nuevaAve;
 
 
     public function mount(){
@@ -31,6 +30,7 @@ class RulesExplanation extends Component
         $this->flag[0] = false;
         $this->flag[1] = false;
         $this->flag[2] = false;
+        $this->nuevaAve = false;
     }
 
     public function render()
@@ -119,12 +119,9 @@ class RulesExplanation extends Component
         //dd($this->ave);
         $this->paso[3] = true;
     }
-    public function mostrarMensaje() {
-        $this->popup = document.getElementById("myPopup");
-        $this->popup.classList.toggle("show");
-    }
-    public function showBtn(){
-        $this->visible=true;
+
+    public function nuevaAve(){
+        $this->nuevaAve = true;
     }
     
 }

@@ -65,7 +65,7 @@
                         <tr>
                             <th class="text-center" scope="col">ID</th>
                             <th class="text-center" scope="col">IMAGEN</th>
-                            <th class="text-center" scope="col">TAMAÑO</th>
+                            <th class="text-center" scope="col">INFO</th>
                             <th class="text-center" scope="col">ACCIONES</th>
                         </tr>
                     </thead>
@@ -74,11 +74,11 @@
                             <tr>
                                 <td>{{ $nuevas_ave->id }}</td>
                                 <td>
-                                    <a href="{{ $nuevas_ave->foto }}" target="__blank">
-                                        <img style="margin: auto; max-width: 150px;" src="{{ $nuevas_ave->foto }}" alt="">
+                                    <a href="{{asset('storage/'.$nuevas_ave->foto)}}" target="__blank">
+                                        <img style="margin: auto; max-width: 150px;" src="{{asset('storage/'.$nuevas_ave->foto)}}" alt="">
                                     </a>
                                 </td>
-                                <td class="text-center">{{ $nuevas_ave->size }}</td>
+                                <td class="text-center">{{ $nuevas_ave->info }}</td>
                                 <td class="text-center">
                                     <button type="button" wire:click="delete({{ $nuevas_ave->id }})"
                                         class="btn btn-danger">Eliminar</button>

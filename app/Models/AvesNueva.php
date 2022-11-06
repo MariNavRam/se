@@ -8,6 +8,6 @@ use Illuminate\Database\Eloquent\Model;
 class AvesNueva extends Model
 {
     use HasFactory;
-    protected $fillable = ['foto', 'file', 'size'];
+    protected $fillable = ['foto', 'info'];
     
 }
