@@ -60,3 +60,76 @@ font-family: "Coperplate", fantasy;
         margin-left: 5px;
         margin-right: 5px;
     }
+    .popup {
+      position: relative;
+      display: inline-block;
+      cursor: pointer;
+  }
+  
+  /* pop-up actual */
+  .popup .popuptext {
+      visibility: hidden;
+      width: 160px;
+      background-color: #555;
+      color: #fff;
+      text-align: center;
+      border-radius: 6px;
+      padding: 8px 0;
+      position: absolute;
+      z-index: 1;
+      bottom: 125%;
+      left: 50%;
+      margin-left: -80px;
+  }
+  
+  
+  .boton {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    background-color: rgb(110, 230, 54);
+    padding-left: 20px;
+    padding-right: 25px;
+    padding-bottom: 11px;
+}
+.boton .botontext {
+    visibility: hidden;
+    width: 160px;
+
+
+background-color: rgb(243, 253, 104);
+color: rgb(150, 140, 140);
+text-align: center;
+border-radius: 6px;
+padding: 8px 0;
+position: absolute;
+z-index: 1;
+bottom: 125%;
+left: 50%;
+margin-left: -80px;
+}
+
+.boton .botontext::after {
+content: "";
+position: absolute;
+top: 100%;
+left: 50%;
+margin-left: -5px;
+border-width: 5px;
+border-style: solid;
+border-color: rgb(65, 211, 21);
+}
+.boton:focus > .botontext {
+visibility: visible;
+-webkit-animation: fadeIn 1s;
+animation: fadeIn 1s
+}
+@-webkit-keyframes fadeIn {
+from {opacity: 0;} 
+to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+from {opacity: 0;}
+to {opacity:1 ;}
+}

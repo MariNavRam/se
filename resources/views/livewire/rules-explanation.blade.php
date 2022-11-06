@@ -1,8 +1,6 @@
 <div>
 <link rel="stylesheet" href="../css/style.css">
 
-    
-   
 
     {{-- Stop trying to control. --}}
     <div class="card shadow">
@@ -92,7 +90,34 @@
                     <li type="square"><h6><b>Sus caracteristicas es:<font color="#14167afd"></b> "{{$this->nombreBuscar}}"</li></font></b><h6>
                     <div>
                 </ul>
-            @endif
+                
+</div>
+
+    
+               <h5> ¿La ave que encontraste es la correcta? </h5>
+
+               <button  class="boton">SI
+              <span class="botontext">¡Felicidades ha encontrado su ave!</span></button>
+               
+              <button  class="boton">NO
+              <span class="botontext">Sube una imagen del ave</span></button>
+               
+               <div>
+                <br>
+               <h5>Sí su respuesta fue "NO", suba una imagen del ave </h5>
+               <br><br>
+{{--SubirImgen--}}
+<form enctype="multipart/form.data" action="../views/nueva-ave" method="POST">
+
+
+            
+              <input type="file" name="file" />
+              <input type="submit" name="upload"/>
+               
+</form>
+                @endif
+              
+         
 </div>
 </div>
         </div>

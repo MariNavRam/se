@@ -41,6 +41,14 @@ Route::get('/nueva_ave', function () {
     return view('nueva_ave');
 })->middleware(['auth', 'verified'])->name('nueva_ave');
 
+Route::get('/nueva-ave', function () {
+    return view('AvesNueva');
+})->middleware(['auth', 'verified'])->name('img_ave');
+
+Route::get('/nueva-ave', function () {
+    return view('imagenueva');
+})->middleware(['auth', 'verified'])->name('imagenueva');
+
 Route::get('/img_ave', function () {
     return view('img_ave');
 })->middleware(['auth', 'verified'])->name('img_ave');

@@ -14,8 +14,11 @@ class RulesExplanation extends Component
 
     public $habitats, $attributes;
     public $pasoTwo, $pasoTree;
+    public $popup, $visible;
 
-    public $ave;
+
+
+
 
     public function mount(){
         $this->paso = [];
@@ -82,7 +85,8 @@ class RulesExplanation extends Component
     }
 
     public function ruleTree(){
-        $this->pasoTree = Ave::whereBetween('mide', [$this->rangeSize[0], $this->rangeSize[1]])->whereHas('habitats.habitat', function ($query) {
+        $this->pasoTree = Ave::whereBetween('mide', [$this->rangeSize[0], $this->rangeSize[1]])->whereHas
+        ('habitats.habitat', function ($query) {
             return $query->where('id', $this->habitaSelect);
         })->with('atributos')->get();
         
@@ -115,4 +119,12 @@ class RulesExplanation extends Component
         //dd($this->ave);
         $this->paso[3] = true;
     }
+    public function mostrarMensaje() {
+        $this->popup = document.getElementById("myPopup");
+        $this->popup.classList.toggle("show");
+    }
+    public function showBtn(){
+        $this->visible=true;
+    }
+    
 }
