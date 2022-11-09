@@ -25,11 +25,15 @@ class SubirImg extends Component
     public function save()
     {
         $this->validate([
-            'img' => 'image|max:1024|required', 
+            'img' => 'image|required', 
             'info' => 'required|max:1000', 
         ]);
  
+
+
         $url = $this->img->store('public/imgs');
+
+        $url = substr($url, 7);
 
         AvesNueva::insert([
             'foto' => $url,
