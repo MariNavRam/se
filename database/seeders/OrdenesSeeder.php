@@ -65,11 +65,12 @@ class OrdenesSeeder extends Seeder
                 'id'=>'10',
                 'nombre'=> 'Piciformes',
                 ]);
-                DB::table('ordenes')->insert([
+        DB::table('ordenes')->insert([
 
-                    'id'=>'11',
-                    'nombre'=> 'Paserifornes',
-                    ]);
+        'id'=>'11',
+        'nombre'=> 'Paserifornes',
+        ]);
 
+    
     }
 }
