@@ -1,13 +1,10 @@
 <div>
-    <link rel="stylesheet" href="../css/style.css">
-
-
     {{-- Stop trying to control. --}}
     @if ($paso[3] == false)
-    <div class="card shadow rounded-4 border-0">
+    <h1 class="text-left m-5">Encontrar Ave</h1>
 
+    <div class="card bg-white overflow-hidden shadow-sm sm:rounded-lg rounded-4 border-0">
         <div class="m-3 body2">
-            <h1 class="text-center mt-5 letra">Encontrar Ave</h1>
 
             <div class="fondo">
                 <br>
@@ -15,7 +12,7 @@
                 @if ($paso[0] == true)
                     <div class="col-sm-3" class="my-3">
                         <h5 class="mb-2">
-                            <font color="white">¿De que tamaño es el ave? </font>
+                            <p>¿De que tamaño es el ave? </p>
                         </h5>
 
                         <div class="btn-toolbar ">
@@ -44,7 +41,7 @@
                     <div class="my-3">
 
                         <h5 class="mb-2">
-                            <font color="white">¿En que hábitat lo vio? </font>
+                            <p>¿En que hábitat lo vio? </p>
                         </h5>
                         @foreach ($habitats as $habitat)
                             <button type="button"
@@ -59,7 +56,7 @@
             @if ($paso[2] == true)
                 <div class="my-3">
                     <h5 class="mb-2">
-                        <font color="white">Selecciona una opción que describa al ave...</font>
+                        <p>Selecciona una opción que describa al ave...</p>
                     </h5>
                     @foreach ($attributes as $attribute)
                         <button type="button"
@@ -78,7 +75,7 @@
 @if ($paso[3] == true && $this->nuevaAve == false)
 <h1 class="m-5"> Ave encontrada</h1>
 
-    <div class="card shadow rounded-4 border-0">
+    <div class="card bg-white overflow-hidden shadow-sm sm:rounded-lg rounded-4 border-0">
         {{-- RESULT --}}
         <div class="m-3">
             <div class="my-3" class="col-md-8">
@@ -90,7 +87,7 @@
                 <div class="row">
                     <div class="col-lg-6">
                         <div class="text-center">
-                            <img src="https://www.hogarmania.com/archivos/201911/aves-848x477x80xX.jpg"
+                            <img src=""
                                 class="img-fluid rounded" alt="...">
                         </div>
                     </div>
