@@ -20,17 +20,17 @@
                                 <input type="radio" class="btn-check" name="btnradio"
                                     {{ $flag[0] == true ? 'disabled' : '' }} {{ $size == 1 ? 'checked' : '' }}
                                     wire:click="ruleOne({{ '1' }})" id="btnradio1" autocomplete="off">
-                                <label class="btn btn-outline-primary" for="btnradio1">Pequeña</label>
+                                <label class="btn btn-primary" for="btnradio1">Pequeña</label>
 
                                 <input type="radio" class="btn-check" name="btnradio"
                                     {{ $flag[0] == true ? 'disabled' : '' }} {{ $size == 2 ? 'checked' : '' }}
                                     wire:click="ruleOne({{ '2' }})" id="btnradio2" autocomplete="off">
-                                <label class="btn btn-outline-primary" for="btnradio2">Mediana</label>
+                                <label class="btn btn-primary" for="btnradio2">Mediana</label>
 
                                 <input type="radio" class="btn-check" name="btnradio"
                                     {{ $flag[0] == true ? 'disabled' : '' }} {{ $size == 3 ? 'checked' : '' }}
                                     wire:click="ruleOne({{ '3' }})" id="btnradio3" autocomplete="off">
-                                <label class="btn btn-outline-primary" for="btnradio3">Grande</label>
+                                <label class="btn btn-primary" for="btnradio3">Grande</label>
                             </div>
                         </div>
 
@@ -45,7 +45,7 @@
                         </h5>
                         @foreach ($habitats as $habitat)
                             <button type="button"
-                                class="btn btn-secondary btn-space btn-margen {{ $habitaSelect == $habitat['id'] ? 'border-primary border border-3' : '' }}"
+                                class="btn btn-secondary btn-space btn-margen {{ $habitaSelect == $habitat['id'] ? 'border border-3' : '' }}"
                                 wire:click="ruleTwoSave({{ $habitat['id'] }})"
                                 {{ $flag[1] == true ? 'disabled' : '' }}>{{ $habitat['nombre'] }}</button>
                         @endforeach
@@ -87,19 +87,44 @@
                 <div class="row">
                     <div class="col-lg-6">
                         <div class="text-center">
-                            <img src=""
-                                class="img-fluid rounded" alt="...">
+                            <img src="{{ asset('storage/' .$this->ave->img)}}"
+                                class="img-fluid rounded-4" alt="...">
                         </div>
                     </div>
                     <div class="col-lg-6">
-                        
+                        <table class="table table-bordered rounded-4">
+                            <tr>
+                                <td>Orden</td>
+                                <td>{{$this->ave->familia->orden->nombre}}</td>
+                            </tr>
+                            <tr>
+                                <td>Familia</td>
+                                <td>{{$this->ave->familia->nombre}}</td>
+                            </tr>
+                            <tr>
+                                <td>Características</td>
+                                <td>
+                                    @foreach ($this->ave->atributos as $atributo)
+                                        {{$atributo->nombre}},
+                                    @endforeach
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Habitats</td>
+                                <td>
+                                    @foreach ($this->ave->habitats as $habitat)
+                                        {{$habitat->habitat->nombre}},
+                                    @endforeach
+                                </td>
+                            </tr>
+                        </table>
                     </div>
                 </div>
 
                 {{-- Modulo Explicacion --}}
                 <br>
                 <div style="background: #dbdbdb;" class="rounded p-3">
-                    <h5>Con base a lo contestado, nos hemos encontrado al ave, con respecto a estas caracterisitcas:
+                    <h5>Con base a lo contestado, encontramos al ave, con respecto a estas características:
                     </h5>
 
                     <p class="m-1">El ave es de tamaño: <span class="fw-bold"> {{ $sizeName }} </span></p>
@@ -112,7 +137,7 @@
             <br>
             <h5> ¿Es el ave que buscabas? </h5>
             <button class="btn btn-warning mt-2" wire:click="nuevaAve()">No, no es el ave que buscaba</button>
-            <button class="btn btn-primary mt-2">Si, buscar otra ave <i class="fa-solid fa-magnifying-glass ms-1"></i></button>
+            <button class="btn btn-primary mt-2" onClick="window.location.reload();">Si, buscar otra ave <i class="fa-solid fa-magnifying-glass ms-1"></i></button>
 
         </div>
     </div>
